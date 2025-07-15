@@ -1,0 +1,362 @@
+/* Interview Page Styles */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --primary-light: #e0e7ff;
+  --secondary: #3f37c9;
+  --accent: #4895ef;
+  --accent-light: #ebf5ff;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --darker: #1a1e21;
+  --gray: #6c757d;
+  --gray-light: #adb5bd;
+  --light-gray: #e9ecef;
+  --lighter-gray: #f1f3f5;
+  --success: #4bb543;
+  --success-light: #edf7ed;
+  --error: #ff3333;
+  --error-light: #ffebee;
+  --warning: #f59e0b;
+  --warning-light: #fff8e6;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --border-radius-sm: 4px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interview-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.interview-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.interview-header h2 {
+  color: var(--darker);
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.error-message {
+  color: var(--error);
+  background: var(--error-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+.upload-mode-selector {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.upload-mode-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+.upload-mode-label input {
+  accent-color: var(--primary);
+}
+
+.upload-mode-label.active {
+  color: var(--primary);
+}
+
+/* File Upload */
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-input-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.file-input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+}
+
+.file-input:hover {
+  border-color: var(--gray-light);
+}
+
+.upload-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.upload-button:disabled {
+  background: var(--gray-light);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Resume Preview */
+.resume-preview {
+  margin: 2rem 0;
+}
+
+.resume-preview h4 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.resume-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+/* Interview Controls */
+.interview-controls {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.start-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.start-button:hover {
+  background: var(--primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+/* Chat Interface */
+.chat-container {
+  margin-top: 2rem;
+}
+
+.chat-header {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.chat-window {
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+  background: var(--lighter-gray);
+}
+
+.message {
+  margin-bottom: 1.25rem;
+  max-width: 80%;
+}
+
+.message-ai {
+  align-self: flex-start;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.message-user {
+  align-self: flex-end;
+  background: var(--primary-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius-lg) 0 var(--border-radius-lg) var(--border-radius-lg);
+  margin-left: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.message-sender {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
+}
+
+.message-user .message-sender {
+  color: var(--primary-dark);
+}
+
+.message-content {
+  line-height: 1.5;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.send-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.send-button:hover {
+  background: var(--primary-dark);
+}
+
+/* Results Section */
+.results-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--lighter-gray);
+  border-radius: var(--border-radius-lg);
+}
+
+.results-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.results-header h3 {
+  color: var(--success);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-section, .feedback-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.section-content {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  line-height: 1.6;
+}
+
+/* Loading State */
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .interview-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .upload-mode-selector {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  
+  .file-input-wrapper {
+    flex-direction: column;
+  }
+  
+  .chat-input-container {
+    flex-direction: column;
+  }
+  
+  .send-button {
+    padding: 0.75rem;
+  }
+}
