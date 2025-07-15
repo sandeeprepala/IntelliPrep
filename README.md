@@ -42,6 +42,6 @@ With IntelliPrep, candidates can boost their confidence, polish their resumes, a
 | **Database**    | MongoDB, Mongoose              |
 | **AI Model**    | Google Gemini API (Generative AI) |
 | **File Parsing**| `pdf-parse`, `mammoth`, `pdf-lib` |
-| **Auth**        | JWT / Token-based auth (if implemented) |
+| **Auth**        | JWT / Token-based auth  |
 
 
