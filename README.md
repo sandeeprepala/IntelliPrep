@@ -37,7 +37,7 @@ With IntelliPrep, candidates can boost their confidence, polish their resumes, a
 
 | Layer           | Tech                           |
 |-----------------|--------------------------------|
-| **Frontend**    | React.js, Axios, Tailwind CSS (optional) |
+| **Frontend**    | React.js, Axios |
 | **Backend**     | Node.js, Express.js            |
 | **Database**    | MongoDB, Mongoose              |
 | **AI Model**    | Google Gemini API (Generative AI) |
