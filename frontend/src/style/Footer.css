@@ -1,0 +1,101 @@
+/* Footer.css */
+.site-footer {
+  background: #f8fafc;
+  padding: 2.5rem 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #2563eb;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Twitter/X */
+.twitter {
+  background: #000;
+  color: white;
+}
+
+/* LinkedIn */
+.linkedin {
+  background: #0a66c2;
+  color: white;
+  font-size: 0.9rem;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* GitHub */
+.github {
+  background: #333;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Instagram */
+.instagram {
+  background: #e1306c;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.social-links a:hover .social-icon {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  color: #718096;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 1.2rem;
+  }
+  
+  .social-links {
+    gap: 1.2rem;
+  }
+}

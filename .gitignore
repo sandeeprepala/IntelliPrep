@@ -1,0 +1,11 @@
+# Node modules for both frontend and backend
+node_modules/
+
+# Build outputs (if any)
+dist/
+build/
+
+# Environment files
+.env
+frontend/.env
+backend/.env
