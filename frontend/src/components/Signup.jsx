@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import '../style/Signup.css';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const Signup = () => {
   const [formData, setFormData] = useState({
     username: '',
@@ -22,7 +24,7 @@ const Signup = () => {
     setIsSubmitting(true);
     
     try {
-      const res = await axios.post(`/api/v1/users/register`, formData, {
+      const res = await axios.post(`${BACKEND_URL}/api/v1/users/register`, formData, {
         headers: {
           'Content-Type': 'application/json'
         },

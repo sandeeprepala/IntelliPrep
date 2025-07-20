@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style/Profile.css'; // Create this CSS file for styling
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const Profile = () => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -14,7 +16,7 @@ const Profile = () => {
                 const local = localStorage.getItem('IntelliPrepUser');
                 const user = local ? JSON.parse(local) : null;
                 const token = user?.accessToken; // Access token from the parsed object
-                const response = await fetch('/api/v1/users/profile', {
+                const response = await fetch(`${BACKEND_URL}/api/v1/users/profile`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -38,7 +40,7 @@ const Profile = () => {
 
     const handleLogout = () => {
         // Call your logout endpoint
-        fetch('/api/users/logout', {
+        fetch(`${BACKEND_URL}/api/users/logout`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('accessToken')}`

@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';  // ✅ only toast here
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -20,7 +22,7 @@ const Login = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await axios.post(`/api/v1/users/login`, formData, {
+      const res = await axios.post(`${BACKEND_URL}/api/v1/users/login`, formData, {
         headers: {
           'Content-Type': 'application/json'
         },

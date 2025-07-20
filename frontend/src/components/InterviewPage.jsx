@@ -5,6 +5,8 @@ import mammoth from "mammoth";
 import { useParams } from "react-router-dom";
 import "../style/InterviewPage.css";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 export default function InterviewPage() {
@@ -104,7 +106,7 @@ export default function InterviewPage() {
     }
     setLoading(true);
     try {
-      const res = await fetch(`/api/v1/mock-interviews/start-interview/${company}/${role}`, {
+      const res = await fetch(`${BACKEND_URL}/api/v1/mock-interviews/start-interview/${company}/${role}`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
@@ -135,7 +137,7 @@ export default function InterviewPage() {
     }
     setLoading(true);
     try {
-      const res = await fetch(`/api/v1/mock-interviews/ask-next/${company}/${role}`, {
+      const res = await fetch(`${BACKEND_URL}/api/v1/mock-interviews/ask-next/${company}/${role}`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",

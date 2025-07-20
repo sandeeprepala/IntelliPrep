@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import '../style/ViewPreviousAnalysisById.css'; // Create this CSS file
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const ViewPreviousAnalysisById = () => {
   const [analysis, setAnalysis] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -23,7 +25,7 @@ const ViewPreviousAnalysisById = () => {
         throw new Error('Authentication required');
       }
 
-      const res = await axios.get(`/api/v1/previous-analysis/${sessionId}`, {
+      const res = await axios.get(`${BACKEND_URL}/api/v1/previous-analysis/${sessionId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
