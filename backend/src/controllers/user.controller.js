@@ -111,7 +111,9 @@ const getUserDetails = asyncHandler(async (req, res, next) => {
     // 1. Get user details from request object
     // 2. Send response with user details
 
-    const user = req.user; // User is attached to the request object by auth middleware
+    const user = req.user;
+    console.log(user);
+     // User is attached to the request object by auth middleware
     if (!user) {
         throw new ApiError("User not found", 404);
     }

@@ -1,0 +1,143 @@
+/* Container */
+.mocktest-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mocktest-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.mocktest-timer {
+  font-size: 16px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Questions */
+.mocktest-question {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+}
+
+.mocktest-question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.mocktest-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mocktest-option {
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.mocktest-option input {
+  margin-right: 8px;
+}
+
+/* Button */
+.mocktest-button {
+  background: #2563eb;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.mocktest-button:hover {
+  background: #2055c8;
+}
+
+.mocktest-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Result view */
+.mocktest-result,
+.mocktest-feedback {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .mocktest-container {
+    padding: 20px;
+  }
+  .mocktest-title {
+    font-size: 24px;
+  }
+  .mocktest-question-text {
+    font-size: 16px;
+  }
+}
+
+/* --- Final feedback container --- */
+.mocktest-completed {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.mocktest-completed h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1f2937; /* dark blue/gray */
+}
+
+.mocktest-completed p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.mocktest-completed .feedback-text {
+  background: #f9fafb;
+  border-left: 4px solid #3b82f6; /* IntelliPrep blue */
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+.mocktest-completed button {
+  padding: 12px 30px;
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mocktest-completed button:hover {
+  background: #2563eb;
+}

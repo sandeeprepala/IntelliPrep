@@ -11,6 +11,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Profile from './components/Profile';
 import InterviewPage from './components/InterviewPage';
+import MockTest from './components/MockTest';
 import ViewPreviousAnalysis from './components/ViewPreviousAnalysis';
 import ViewPreviousAnalysisById from './components/ViewPreviousAnalysisById';
 import './App.css';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/mock-interviews/:company/:role" element={<InterviewPage />} />
+            <Route path="/mock-test/:company/:role" element={<MockTest />} />
             <Route path="/previous-analysis" element={<ViewPreviousAnalysis />} />
             <Route path="/previous-analysis/:sessionId" element={<ViewPreviousAnalysisById />} />
 
