@@ -7,7 +7,7 @@ function Home() {
   const handleGetStarted = () => {
     const isLoggedIn = localStorage.getItem('IntelliPrepUser');
     if (isLoggedIn) {
-      navigate('/resume-review');  // Send logged-in users to prep
+      navigate('/interviews');  // Send logged-in users to prep
     } else {
       navigate('/login');  // Send others to login
     }

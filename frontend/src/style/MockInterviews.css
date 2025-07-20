@@ -191,6 +191,29 @@
 .view-button:hover::after {
   transform: translateX(2px);
 }
+.view-button-mock {
+  background: rgb(230, 18, 18);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.view-button-mock:hover {
+  background: rgb(205, 17, 17);
+  transform: translateX(3px);
+}
+
+.view-button-mock:hover::after {
+  transform: translateX(2px);
+}
 
 /* Enhanced Empty State */
 .empty-state {

@@ -37,6 +37,12 @@ const MockInterviews = () => {
     navigate(`/mock-interviews/${company}/${role}`);
   };
 
+  const handleMockClick = (session) =>{
+    const company = encodeURIComponent(session.company);
+    const role = encodeURIComponent(session.role);
+    navigate(`/mock-test/${company}/${role}`);
+  };
+
   if (loading) return (
     <div className="loading-container">
       <div className="loading-spinner"></div>
@@ -60,7 +66,7 @@ const MockInterviews = () => {
   return (
     <div className="sessions-container">
       <div className="sessions-header">
-        <h2>Your Interview Sessions</h2>
+        <h2>Mock Interview and Mock Test Sessions</h2>
         <p className="sessions-count">{sessions.length} session{sessions.length !== 1 ? 's' : ''}</p>
         
       </div>
@@ -71,7 +77,7 @@ const MockInterviews = () => {
             <div 
               key={session._id} 
               className="session-card"
-              onClick={() => handleSessionClick(session)}
+              // onClick={() => handleSessionClick(session)}
             >
               <div className="card-header">
                 <h3>{session.company}</h3>
@@ -99,7 +105,16 @@ const MockInterviews = () => {
                     handleSessionClick(session);
                   }}
                 >
-                  View Details
+                  Start Interview
+                </button>
+                <button 
+                  className="view-button-mock"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleMockClick(session);
+                  }}
+                >
+                  Mock Test
                 </button>
               </div>
             </div>
