@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../style/MockInterviews.css';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const MockInterviews = () => {
   const [sessions, setSessions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -15,7 +17,7 @@ const MockInterviews = () => {
         const local = localStorage.getItem('IntelliPrepUser');
         const user = local ? JSON.parse(local) : null;
         const token = user?.accessToken;
-        const response = await axios.get('/api/v1/interviews', {
+        const response = await axios.get(`${BACKEND_URL}/api/v1/interviews`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

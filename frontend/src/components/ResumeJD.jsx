@@ -7,6 +7,8 @@ import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 import pdfjsWorker from 'pdfjs-dist/build/pdf.worker?url';
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const ResumeJD = () => {
   const [resumeText, setResumeText] = useState('');
   const [jobDescription, setJobDescription] = useState('');
@@ -67,7 +69,7 @@ const ResumeJD = () => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.post('/api/v1/resume', {
+      const response = await axios.post(`${BACKEND_URL}/api/v1/resume`, {
         resumeText: resumeText.substring(0, 2000),
         jobDescription: jobDescription.substring(0, 1000)
       });

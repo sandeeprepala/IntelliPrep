@@ -4,6 +4,8 @@ import '../style/ResourcesPage.css';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const ResourcesPage = () => {
   const [resources, setResources] = useState([]);
   const [filteredResources, setFilteredResources] = useState([]);
@@ -23,7 +25,7 @@ const ResourcesPage = () => {
         const user = local ? JSON.parse(local) : null;
         const token = user?.accessToken;
 
-        const response = await axios.get('/api/v1/resources/');
+        const response = await axios.get(`${BACKEND_URL}/api/v1/resources/`);
 
         const data = response.data.data;
         console.log(data.data);

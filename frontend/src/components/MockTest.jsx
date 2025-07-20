@@ -4,6 +4,8 @@ import axios from "axios";
 import "../style/MockTest.css";
 import toast, { Toaster } from "react-hot-toast";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const MockTest = () => {
   const { company, role } = useParams();
   const navigate = useNavigate();
@@ -22,7 +24,7 @@ const MockTest = () => {
         const user = local ? JSON.parse(local) : null;
         const token = user?.accessToken;
 
-        const res = await axios.get(`/api/v1/mock-test/${company}/${role}`, {
+        const res = await axios.get(`${BACKEND_URL}/api/v1/mock-test/${company}/${role}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -72,7 +74,7 @@ const MockTest = () => {
     toast.promise(
       axios
         .post(
-          `/api/v1/mock-test/feedback`,
+          `${BACKEND_URL}/api/v1/mock-test/feedback`,
           {
             company,
             role,
