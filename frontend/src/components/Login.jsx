@@ -18,6 +18,7 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
+    console.log(BACKEND_URL);
     e.preventDefault();
     setIsSubmitting(true);
 
