@@ -11,7 +11,7 @@
 - **Match resumes with job descriptions**
 - **Get AI-generated feedback & improvement suggestions**
 - **Practice mock interviews with dynamic AI questions**
-- - **Practice mock Tests with instant AI Feedback and Analysis Based upon the performance**
+- **Practice mock Tests with instant AI Feedback and Analysis Based upon the performance**
 - **View detailed feedback and analysis of past sessions**
 
 With IntelliPrep, candidates can boost their confidence, polish their resumes, and prepare for interviews using cutting-edge AI.
