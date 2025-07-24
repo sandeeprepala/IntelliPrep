@@ -10,9 +10,10 @@
 - **Upload & analyze resumes**
 - **Match resumes with job descriptions**
 - **Get AI-generated feedback & improvement suggestions**
-- **Practice mock interviews with dynamic AI questions**
+- **Practice Personalized mock interviews Based upon your resume, company and role with dynamic AI questions**
 - **Practice mock Tests with instant AI Feedback and Analysis Based upon the performance**
 - **View detailed feedback and analysis of past sessions**
+- **Added Resources based upon company and role opting, which basically consist of previously asked interview and DSA questions along with guides**
 
 With IntelliPrep, candidates can boost their confidence, polish their resumes, and prepare for interviews using cutting-edge AI.
 
