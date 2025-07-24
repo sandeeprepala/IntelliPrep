@@ -1,6 +1,6 @@
 # 📚 IntelliPrep
 
-**AI-powered Mock Interview and Resume Analyzer Platform**
+**AI-powered Interview Prepration platform**
 
 ---
 
