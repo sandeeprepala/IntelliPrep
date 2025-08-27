@@ -25,6 +25,7 @@ import interviewRouter from './Routes/interviewRoute.js';
 import mockRouter from './Routes/mockinterviewRoute.js';
 import viewPreviousAnalysisRouter from './Routes/viewPreviousAnalysisRoute.js';
 import mockTestRouter from './Routes/mockTestRoute.js';
+import roadmapRoute from './Routes/roadmapsRoute.js';
 
 
 // Use routes
@@ -35,6 +36,7 @@ app.use('/api/v1/interviews', interviewRouter);
 app.use('/api/v1/mock-interviews', mockRouter);
 app.use('/api/v1/previous-analysis', viewPreviousAnalysisRouter);
 app.use('/api/v1/mock-test', mockTestRouter);
+app.use('/api/v1/roadmaps',roadmapRoute);
 
 
 export { app };

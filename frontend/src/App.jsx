@@ -14,6 +14,9 @@ import InterviewPage from './components/InterviewPage';
 import MockTest from './components/MockTest';
 import ViewPreviousAnalysis from './components/ViewPreviousAnalysis';
 import ViewPreviousAnalysisById from './components/ViewPreviousAnalysisById';
+import RoadmapGenerator from './components/RoadmapGenerator';
+import RoadmapsList from './components/RoadmapsList';
+import RoadmapDetail from './components/RoadmapDetail';
 import './App.css';
 
 function App() {
@@ -37,6 +40,9 @@ function App() {
             <Route path="/mock-test/:company/:role" element={<MockTest />} />
             <Route path="/previous-analysis" element={<ViewPreviousAnalysis />} />
             <Route path="/previous-analysis/:sessionId" element={<ViewPreviousAnalysisById />} />
+            <Route path='/roadmapGenerator' element={<RoadmapGenerator/>}/>
+            <Route path='/roadmaps' element={<RoadmapsList/>}/>
+            <Route path='/roadmaps/:id' element={<RoadmapDetail/>}/>
 
           </Routes>
         </main>

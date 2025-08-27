@@ -43,7 +43,7 @@ const resumeJD = async (req, res) => {
     // Try both model names for compatibility
     let model, result, response, text, data;
     try {
-      model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+      model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       result = await model.generateContent(prompt);
       response = await result.response;
       text = response.text();

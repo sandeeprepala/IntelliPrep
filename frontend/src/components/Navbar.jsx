@@ -15,11 +15,11 @@ const Navbar = () => {
         </div>
         
         <div className="nav-links">
-          <Link to="/" className="nav-link">Home</Link>
-          
           <Link to="/resume-review" className="nav-link">Resume JD Matcher</Link>
           <Link to="/interviews" className="nav-link">Mock Interviews / Tests</Link>
           <Link to="/previous-analysis" className="nav-link">Interview Analysis</Link>
+          <Link to="/roadmapGenerator" className="nav-link">Generate Roadmap</Link>
+          <Link to="/roadmaps" className="nav-link">Previus Roadmaps</Link>
           <Link to="/interview-prep" className="nav-link">Resources</Link>
           <Link to="/profile" className="signup-btn">Profile</Link>
 
