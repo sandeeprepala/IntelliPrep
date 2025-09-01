@@ -2,6 +2,7 @@
 
 **AI-powered Interview Prepration platform**
 
+Live link - https://intelli-prep-3zzkw0yvy-sandeeprepala3-gmailcoms-projects.vercel.app
 ---
 
 ## 🚀 Overview
