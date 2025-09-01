@@ -14,6 +14,7 @@
 - **Practice mock Tests with instant AI Feedback and Analysis Based upon the performance**
 - **View detailed feedback and analysis of past sessions**
 - **Added Resources based upon company and role opting, which basically consist of previously asked interview and DSA questions along with guides**
+- **Added Roadmap generator - Roadmap for any role and company gets generated just in a click**
 
 With IntelliPrep, candidates can boost their confidence, polish their resumes, and prepare for interviews using cutting-edge AI.
 
@@ -32,6 +33,8 @@ With IntelliPrep, candidates can boost their confidence, polish their resumes, a
 ✅ **Detailed Analysis** — After the interview, view a report covering strengths, weaknesses, and suggestions for improvement.
 
 ✅ **Session History** — Track previous interview sessions, analyses, and feedback.
+
+✅ **Roadmap Generator** - Generates a Roadmap to crack any interview according to selected company and role.
 
 ---
 
