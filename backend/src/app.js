@@ -7,7 +7,7 @@ const app = express();
 import cors from "cors";
 
 app.use(cors({
-  origin: "*", // your frontend port
+  origin: "https://intelli-prep-3zzkw0yvy-sandeeprepala3-gmailcoms-projects.vercel.app", // your frontend port
   credentials: true               // ✅ allow sending cookies
 }));
 
